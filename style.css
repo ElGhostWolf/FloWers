@@ -1,12 +1,11 @@
 body {
-    background-color: #f9f9f9;
+    background-color: #ffff00; /* Amarillo */
     font-family: 'Cursive', 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    text-align: center;
 }
 
 .container {
@@ -15,6 +14,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -27,7 +27,10 @@ h1 {
 }
 
 .image-container {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .image {
@@ -37,7 +40,7 @@ h1 {
 }
 
 .image-description {
-    text-align: center;
+    font-size: 1.2em;
     margin-top: 10px;
 }
 
