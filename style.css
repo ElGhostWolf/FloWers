@@ -1,25 +1,52 @@
 body {
-    background-color: #ffff00; /* Amarillo */
-    font-family: 'Cursive', 'Arial', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #ffeb3b; /* Color amarillo */
+    text-align: center;
     margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
-    max-width: 500px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    text-align: center;
 }
 
-h1 {
-    color: #d2691e;
-    font-size: 2.5em;
+#mensaje-inicial {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#mostrar-imagenes {
+    background-color: #f57f20;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#mostrar-imagenes:hover {
+    background-color: #ff8c00;
+}
+
+.image-container {
+    display: none;
+    justify-content: center;
+}
+
+.image {
+    width: 150px; /* Tamaño más pequeño */
+    height: auto;
+    margin: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.image-description {
+    display: none;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .hidden {
